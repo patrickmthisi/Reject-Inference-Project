@@ -5,7 +5,7 @@ The project aims to develop a credit scorecard using data from all through-the-d
 
 A straightforward approach to building a scorecard in this situation is to treat the rejects as Missing at Random (MAR) and to perform list-wise deletion of these cases. This means that the scorecard will be based solely on accepted applicants, who have a known good or bad status (referred to as the KGB sample). However, ignoring the rejected applications can introduce bias, as they usually represent a significant portion of the overall banking portfolio.
 
-To address this issue, we can perform reject inference, which involves inferring the behavior of rejected applicants using the KGB model. Several techniques are available for this purpose, including Soft Augmentation, Fuzzy Augmentation, and Parcelling. The reader is encouraged to explore each of these methods. In this project, we will adopt the Simple Augmentation methodology.
+To address this issue, we can perform reject inference, which involves inferring the behavior of rejected applicants using the KGB model. Several techniques are available for this purpose, including Simple Augmentation, Fuzzy Augmentation, and Parcelling. The reader is encouraged to explore each of these methods. In this project, we will adopt the Simple Augmentation methodology.
 
 
 This project delves into several important concepts and tools, including:  
