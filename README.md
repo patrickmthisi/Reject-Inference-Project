@@ -16,7 +16,9 @@ This project delves into several important concepts and tools, including:
 
 ## Conclusion and recommendations:
 
-In the end-to-end reject inference project, we applied the Simple Augmentation method, also known as the Hard Cut-off method. We trained a suite of machine learning models using known good and bad samples (KGB), ultimately identifying the extreme gradient boosting (XGB) model as the best performer, with an ROC AUC of 0.827 and a Gini coefficient of 0.654.
+In the end-to-end reject inference project, we applied the Simple Augmentation method, also known as the Hard Cut-off method. We trained a suite of machine learning models using known good and bad samples (KGB), ultimately identifying the extreme gradient boosting (XGB) model as the best performer, with an ROC AUC of 0.827 and a Gini coefficient of 0.654:
+
+![KGB performance](KGB_perf.png)
 
 We determined an optimal threshold based on the highest F1 score and classified rejected customers as 'bad' or 'good' based on their default probability relative to this threshold. The rejected sample was combined with the KGB training sample to create a through-the-door (TTD) dataset for further model training and evaluation.
 
