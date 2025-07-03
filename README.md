@@ -20,6 +20,12 @@ In the end-to-end reject inference project, we applied the Simple Augmentation m
 
 ![KGB performance](KGB_perf.png)
 
-We determined an optimal threshold based on the highest F1 score and classified rejected customers as 'bad' or 'good' based on their default probability relative to this threshold. The rejected sample was combined with the KGB training sample to create a through-the-door (TTD) dataset for further model training and evaluation.
+We determined an optimal threshold based on the highest F1 score and classified rejected customers as 'bad' or 'good' based on their default probability relative to this threshold. 
+
+![optimal threshold](optimal_threshold.png)
+
+The rejected sample was combined with the KGB training sample to create a through-the-door (TTD) dataset for further model training and evaluation.
 
 The XGB model again proved to be the best, achieving ROC AUC and Gini scores of 0.810 and 0.619, respectively—only slightly different from the performance of the KGB model. Notably, the TTD model showed improved coverage of defaults, with a recall score of 0.884 compared to 0.811 for the KGB model. Further work includes exploring other reject inference methodologies such as Fuzzy Augmentation and Parcelling.
+
+![TTD performance](TTD_perf.png)
