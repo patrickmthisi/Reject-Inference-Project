@@ -1,4 +1,7 @@
 # Reject-Inference-Project
+- $\textbf{Author}$: Patrick Mthisi
+- $\textbf{Contact details}$: patrickmthisi@hotmail.com
+
 ## Objectives:
 
 The project aims to develop a credit scorecard using data from all through-the-door credit customers. Among these customers, some have their credit applications rejected, resulting in a lack of information about their behavior at the time the scorecard is developed. Only the accepted clients have accumulated sufficient credit history, allowing us to label them as 'bad' or 'good' based on whether they have defaulted on their payments.
